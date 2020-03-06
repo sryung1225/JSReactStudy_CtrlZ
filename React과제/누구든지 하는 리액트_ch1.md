@@ -23,11 +23,11 @@ Ex. Angular, Ember, Backbone, Vue, React 등 <br><br>
 
 ## <2> 리액트의 Virtual DOM
 
-> *"We built React to solve one problem: building large applications with data that changes over time."* 
+> *"We built React to solve one problem: building large applications with data that changes over time."* <br>
 > *우리는 지속해서 데이터가 변화하는 대규모 애플리케이션을 구축하기 위해 React를 만들었습니다.*
 <br>
 Q. 위 질문에서 리액트 사용이 유일한 해답이였나? <br>
-A. 아니다! <br>
+A. 아니다! <br><br>
 
 MVC, MVVM, MVW 등의 패턴들로 이루어진 프레임워크들이 React 개발 전 부터 존재했음 (Ex. Angular, Backbone,..) <br>
 (* MVC : Model(데이터단을 담당) + View(화면에서 보여지게 됨) + Controller(이벤트 처리)) <br>
@@ -53,7 +53,7 @@ A. 아니? <br>
 리액트는 Virtual DOM을 성공적으로 사용한 선발주자. 이를 보고 많은 라이브러리도 따라 선택함 <br>
 Ex. Vue, Marko, Maquette, Mithril 등 <br>
 
-
+<br>
 Q. 리액트를 특별하게 만드는 점은? <br>
 
 A1. 어마어마한 생태계 <br>
