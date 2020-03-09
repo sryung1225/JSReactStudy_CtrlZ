@@ -25,14 +25,15 @@
 > **CodeSandbox** (https://bit.ly/beginreact) (초보자 실습용)
 
 <br>
-**설치(Window)**<br>
+
+**설치(Window)** <br>
 cmd 창을 열어서<br>
 ```
 npm install -g create-react-app
 ```
 <br>
 
-**사용**<br>
+**사용** <br>
 cmd 창을 열어서<br>
 ```
 create-react-app hello-react
@@ -40,7 +41,8 @@ create-react-app hello-react
 ![install](./img/install.JPG)<br>
 ↑ 성공적으로 설치됐음을 알리는 문구<br>
 <br>
-리액트 프로젝트 시작<br>
+
+**프로젝트 시작** <br>
 ```
 cd hello-react
 yarn start
