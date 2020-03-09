@@ -24,6 +24,7 @@
 > **VS Code** (https://code.visualstudio.com) <br>
 > **CodeSandbox** (https://bit.ly/beginreact) (초보자 실습용)
 
+<br>
 **설치(Window)**<br>
 cmd 창을 열어서<br>
 ```
