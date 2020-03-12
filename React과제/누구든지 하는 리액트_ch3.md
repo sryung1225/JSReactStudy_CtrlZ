@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div>
         <input type="text">
-     </div>
+      </div>
     );
   }
 }
@@ -32,9 +32,9 @@ export default App;
 ↑ input을 닫아주지 않았기 때문에 오류가 나는 경우 <br>
 
 ```
-          <div>
-            <input type="text" />
-          </div>
+        <div>
+          <input type="text" />
+        </div>
 ```
 ↑ 셀프 클로징 태그 ( **/>**  : 한 번 연 태그를 그 자리에서 닫는 역할) 를 이용해 오류 해결<br>
 <br>
@@ -60,7 +60,7 @@ export default App;
 
 ```
       <Fragment>
-	    <div> Hello </div>
+	<div> Hello </div>
         <div> Bye </div>
       </Fragment>
 ```
@@ -240,7 +240,7 @@ export default App;
 
 (2) html에서 일부 style 이름들은 중간에 '-'가 들어가는데(ex. background-color) react에서는 새로운 단어마다 대문자로 시작(ex. backgroundColor)<br>
 
-(3) 색상이나 숫자를 입력할 때 **' '**로 열고 닫은 문자열 형태로 작성<br>
+(3) 색상이나 숫자를 입력할 때 ' '로 열고 닫은 문자열 형태로 작성<br>
 
 ![ch3_02](./img/ch3_02.JPG)<br>
 ↑ 결과물<br>
