@@ -14,19 +14,19 @@ HTML이랑 비슷하지만 지켜야 할 **규칙**이 몇가지 있으며 이�
 **규칙 1. 꼭 닫혀야 하는 태그** <br>
 태그는 꼭 닫혀있어야 함<br>
 ```
-    import React, { Component } from 'react';
+import React, { Component } from 'react';
     
-    class App extends Component {
-      render() {
-        return (
-          <div>
-            <input type="text">
-          </div>
-        );
-      }
-    }
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <input type="text">
+     </div>
+    );
+  }
+}
     
-    export default App;
+export default App;
 ```
 ↑ input을 닫아주지 않았기 때문에 오류가 나는 경우 <br>
 
@@ -93,7 +93,7 @@ export default App;
 
 > *const : 한 번 선언하고 고정적인 값
 > *let : 선언 후 바뀌게 될 수 있는 유동적인 값<br>
-> *기존의 자바스크립트의 var와 비슷하나 작동방식에 있어 scope가 다름
+> *기존의 자바스크립트의 var와 비슷하나 작동방식에 있어 scope가 다름<br>
 >  var은 scope가 함수단위, const와 let은 블록단위 임<br>
 
 ```
@@ -180,7 +180,7 @@ export default App;
 ```
 ↑ IIFE 예시 1<br>
 ```
-<div>
+      <div>
         {
           (() => { //화살표 함수 이용
             if (value === 1) return (<div>하나</div>);
