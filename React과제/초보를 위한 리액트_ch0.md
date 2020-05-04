@@ -12,10 +12,14 @@
 - Style Component
 - Github
 
+<br><br>
+
 ## <1> What are we building
 
 ![ch0_01](./img2/ch0_01.JPG)<br>
 ![ch0_02](./img2/ch0_02.JPG)<br>
+
+<br>
 
 **Popcorn-Time**
 - 맥/윈도우 앱
