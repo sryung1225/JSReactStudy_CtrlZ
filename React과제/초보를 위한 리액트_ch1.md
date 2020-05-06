@@ -13,7 +13,7 @@ JS의 기초가 되는 부분을 이해하고 갈 것<br>
 ## <1> Arrow Functions
 
 
-**Arrow Function (화살표 함수>**<br>
+**Arrow Function (화살표 함수)**<br>
 ```javascript
 function sayHello(name){
 	return "Hello " + name
@@ -95,6 +95,7 @@ argument가 두 개(event와 something)일 경우, 위와 같이 표기<br>
 
 ## <2> Template Literals
 
+
 **Template Literals** <br>
 Template, Variable, String들 다루기 가장 좋은 방법<br>
 
@@ -111,7 +112,102 @@ const sayHello = (name = "Sryung") => `Hello ${name}`;
 
 ## <3> Object Destructuring
 
+
+**Destructuring**<br>
+일일히 값을 넣지 않고 한 줄로 한번에 넣을 수 있음<br>
+```javascript
+const human = {
+	name: "Ryung",
+	lastName: "Lee",
+	nationality: "I'm hungry"
+	favFood: {
+		braekfast: "Toast",
+		lunch: "Noodle"
+		dinner: "Chicken"
+	}
+}
+
+// const name = human.name;
+// const lastName = human.lastName;
+// const difName = human.nationality;
+// const dinner = human.favFood.dinner;
+// const breakfast = human.favFood.breakfast;
+
+const { name, lastName, nationality:difName, favFood:{dinner, breakfast} } = human;
+
+console.log(name, lastName, difName, dinner, breakfast);
+```
+주석 처리 된 것이 Structuring, 아래부분이 Destructuring<br>
+<br>
+(1) 풀이하자면 human이라는 object로 가서 name의 값을 새로운 변수인 name에 넣고, lastName의 값을 새로운 변수 lastName에 넣는 것<br><br>
+
+(2) 그리고 만약 새 변수 이름을 이전 human 안에 있는 이름 그대로 들고오고 싶지 않을 때는 nationality의 예시와 같이 `원래이름:바꿀이름` 으로 들고올 수 있음<br><br>
+
+(3) 단,  `:` 이후 중괄호가 들어가면 favFood의 예시와 같이 `object이름:{object 안에서 꺼내올 것의 이름}` 으로 아예 용도가 달라지므로 주의<br><br>
+
+결과적으로 *Ryung Lee I'm hungry Chicken Toast* 출력<br>
+
+<br><br><br>
+
+
 ## <4> Spread Operator
+
+
+**Spread Operator**<br>
+배열로부터 아이템을 가져와서 Unpack함<br>
+```javascript
+const days = ["Mon", "Tues", "Wed"];
+const otherDays = ["Thu", "Fri", "Sat"];
+
+const allDays1 = days + otherDays;
+let allDays2 = [days + otherDays];
+const allDays3 = [...days, ...otherDays];
+const allDays4 = [...days, ...otherDays, "Sun"];
+
+console.log(days); // ["Mon", "Tues", "Wed"]
+console.log(otherDays); // ["Thu", "Fri", "Sat"]
+
+console.log(allDays1); // Mon,Tues,WedThu,Fri,Sat
+console.log(allDays2); // ["Mon,Tues,WedThu,Fri,Sat"]
+console.log(allDays3); // ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat"]
+console.log(allDays4); // ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"]
+```
+(1) `+`를 이용할 경우, 배열 days와 배열 otherDays 를 + 로 묶은  allDays는 배열이 아니고 String임<br>
+<br>
+(2) let을 이용할 경우, 오직 하나의 Item을 가진 배열이 됨<br>
+<br>
+(3) `...`을 배열 이름 앞에 붙임으로써 배열 내부의 콘텐츠들이 개별로 됨<br>
+<br>
+(4) 그리고 뒤에 이어서 콘텐츠를 추가 할 수 있음<br>
+<br><br>
+
+Sparead Operater는 Object에서도 작동<br>
+```javascript
+const ob = {
+	first: "hi",
+	secong: "hello"
+}
+
+const ab = {
+	third: "bye bye"
+}
+
+const one = {ob, ab}; 
+const two = {...ob, ...ab};
+
+console.log(one); // Object {ob: Object, ab:Object}
+console.log(two); // Object {first: "hi", second: "hello", third: "bye bye"} 
+```
+(1) 두 Object가 들어있는 하나의 Object가 탄생함<br>
+(2) 두개의 Object의 콘텐츠를 가지게 됨<br>
+
+<br><br>
+
+Sparead Operater는 그 외에도 argument와  function에서도 작동하며 아주 유용함<br>
+
+<br><br><br>
+
+
 
 ## <5> Classes
 
