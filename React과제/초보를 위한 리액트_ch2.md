@@ -308,7 +308,7 @@ export default () => (
 	</Router>
 );
 ```
-↑ App.js<br>
+↑ Router.js<br>
 <br>
 메인 주소 뒤에 지정되지 않은 이상한 주소를 입력할 경우 홈화면(`"/"`)을 띄워주도록 이용하는 것이 **Redirect**<br>
 하지만 `"/"` 는 모든 Route의 path에 들어가있기 때문에 즉, 다수의 Route가 동시에 렌더링되는 것<br>
